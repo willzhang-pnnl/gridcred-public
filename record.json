@@ -6,14 +6,14 @@
     },
     "files": "public",
     "record": "public",
-    "status": "metadata-only"
+    "status": "open"
   },
   "created": "2026-04-24T22:44:14.868833+00:00",
   "custom_fields": {},
   "expires_at": "2026-04-24 22:44:14.868814",
   "files": {
     "count": 0,
-    "enabled": false,
+    "enabled": true,
     "entries": {},
     "order": [],
     "total_bytes": 0
@@ -91,7 +91,7 @@
         }
       }
     ],
-    "title": "Brackish Groundwater"
+    "title": "Brackish Groundwater WITH FILES"
   },
   "parent": {
     "access": {
