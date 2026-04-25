@@ -1,0 +1,495 @@
+{
+  "access": {
+    "embargo": {
+      "active": false,
+      "reason": null
+    },
+    "files": "public",
+    "record": "public",
+    "status": "open"
+  },
+  "created": "2025-04-30T00:26:52.055855+00:00",
+  "custom_fields": {
+    "meeting:meeting": {
+      "acronym": "AGU2024",
+      "dates": "9 - 13 December 2024",
+      "place": "Washington D.C.",
+      "session": "GC31Q",
+      "title": "American Geophysical Union Annual Meeting 2024",
+      "url": "https://www.agu.org/annual-meeting"
+    }
+  },
+  "deletion_status": {
+    "is_deleted": false,
+    "status": "P"
+  },
+  "files": {
+    "count": 8,
+    "enabled": true,
+    "entries": {
+      "Event definitions.docx": {
+        "access": {
+          "hidden": false
+        },
+        "checksum": "md5:76aa006fea82cf27696a09208a89cc36",
+        "ext": "docx",
+        "id": "9686f29f-69af-41c6-b09c-c84e3a321ea6",
+        "key": "Event definitions.docx",
+        "links": {
+          "content": "https://zenodo.org/api/records/15306963/files/Event%20definitions.docx/content",
+          "self": "https://zenodo.org/api/records/15306963/files/Event%20definitions.docx"
+        },
+        "metadata": {},
+        "mimetype": "application/octet-stream",
+        "size": 15090,
+        "storage_class": "L"
+      },
+      "NERC subregions with mean temperature.tif": {
+        "access": {
+          "hidden": false
+        },
+        "checksum": "md5:c53d1403a9a8f117d9ad982a61a83da3",
+        "ext": "tiff",
+        "id": "a17c229a-c754-45fd-9e5d-9a8ce0c9e2ca",
+        "key": "NERC subregions with mean temperature.tif",
+        "links": {
+          "content": "https://zenodo.org/api/records/15306963/files/NERC%20subregions%20with%20mean%20temperature.tif/content",
+          "iiif_api": "https://zenodo.org/api/iiif/record:15306963:NERC%20subregions%20with%20mean%20temperature.tif/full/full/0/default.png",
+          "iiif_base": "https://zenodo.org/api/iiif/record:15306963:NERC%20subregions%20with%20mean%20temperature.tif",
+          "iiif_canvas": "https://zenodo.org/api/iiif/record:15306963/canvas/NERC%20subregions%20with%20mean%20temperature.tif",
+          "iiif_info": "https://zenodo.org/api/iiif/record:15306963:NERC%20subregions%20with%20mean%20temperature.tif/info.json",
+          "self": "https://zenodo.org/api/records/15306963/files/NERC%20subregions%20with%20mean%20temperature.tif"
+        },
+        "metadata": {
+          "height": 2000,
+          "width": 4000
+        },
+        "mimetype": "image/tiff",
+        "size": 527376,
+        "storage_class": "L"
+      },
+      "cold_snap_library_NERC_average.zip": {
+        "access": {
+          "hidden": false
+        },
+        "checksum": "md5:98442f879ac86adfb7e306d2ffdd231a",
+        "ext": "zip",
+        "id": "b2b35bc9-c4f2-4c5c-bb08-17b21f464a10",
+        "key": "cold_snap_library_NERC_average.zip",
+        "links": {
+          "content": "https://zenodo.org/api/records/15306963/files/cold_snap_library_NERC_average.zip/content",
+          "self": "https://zenodo.org/api/records/15306963/files/cold_snap_library_NERC_average.zip"
+        },
+        "metadata": {},
+        "mimetype": "application/zip",
+        "size": 573632,
+        "storage_class": "L"
+      },
+      "cold_snap_library_NERC_average_area.zip": {
+        "access": {
+          "hidden": false
+        },
+        "checksum": "md5:c289b60b03e5549888eefdf180a21036",
+        "ext": "zip",
+        "id": "999eedbb-534d-4690-8c20-aace672fc95c",
+        "key": "cold_snap_library_NERC_average_area.zip",
+        "links": {
+          "content": "https://zenodo.org/api/records/15306963/files/cold_snap_library_NERC_average_area.zip/content",
+          "self": "https://zenodo.org/api/records/15306963/files/cold_snap_library_NERC_average_area.zip"
+        },
+        "metadata": {},
+        "mimetype": "application/zip",
+        "size": 698350,
+        "storage_class": "L"
+      },
+      "cold_snap_library_NERC_average_pop.zip": {
+        "access": {
+          "hidden": false
+        },
+        "checksum": "md5:6396f0f9d3c9bf711f16b0f7e766e077",
+        "ext": "zip",
+        "id": "4d37d145-033d-4da9-8b64-f75254781d24",
+        "key": "cold_snap_library_NERC_average_pop.zip",
+        "links": {
+          "content": "https://zenodo.org/api/records/15306963/files/cold_snap_library_NERC_average_pop.zip/content",
+          "self": "https://zenodo.org/api/records/15306963/files/cold_snap_library_NERC_average_pop.zip"
+        },
+        "metadata": {},
+        "mimetype": "application/zip",
+        "size": 699211,
+        "storage_class": "L"
+      },
+      "heat_wave_library_NERC_average.zip": {
+        "access": {
+          "hidden": false
+        },
+        "checksum": "md5:bcd636e57cd45375d6edfcaf29885dd7",
+        "ext": "zip",
+        "id": "dfd395a1-12b4-4fa0-a820-34639311818b",
+        "key": "heat_wave_library_NERC_average.zip",
+        "links": {
+          "content": "https://zenodo.org/api/records/15306963/files/heat_wave_library_NERC_average.zip/content",
+          "self": "https://zenodo.org/api/records/15306963/files/heat_wave_library_NERC_average.zip"
+        },
+        "metadata": {},
+        "mimetype": "application/zip",
+        "size": 523346,
+        "storage_class": "L"
+      },
+      "heat_wave_library_NERC_average_area.zip": {
+        "access": {
+          "hidden": false
+        },
+        "checksum": "md5:42d09f2c4ad3aceda56ba50706934cae",
+        "ext": "zip",
+        "id": "8ff99402-7c72-4acf-97b8-37b5d5ba4ee6",
+        "key": "heat_wave_library_NERC_average_area.zip",
+        "links": {
+          "content": "https://zenodo.org/api/records/15306963/files/heat_wave_library_NERC_average_area.zip/content",
+          "self": "https://zenodo.org/api/records/15306963/files/heat_wave_library_NERC_average_area.zip"
+        },
+        "metadata": {},
+        "mimetype": "application/zip",
+        "size": 637458,
+        "storage_class": "L"
+      },
+      "heat_wave_library_NERC_average_pop.zip": {
+        "access": {
+          "hidden": false
+        },
+        "checksum": "md5:42d5c91127b61816886a86b6193c54a3",
+        "ext": "zip",
+        "id": "07562aa3-b50d-4372-b8e0-a9fd551f06ef",
+        "key": "heat_wave_library_NERC_average_pop.zip",
+        "links": {
+          "content": "https://zenodo.org/api/records/15306963/files/heat_wave_library_NERC_average_pop.zip/content",
+          "self": "https://zenodo.org/api/records/15306963/files/heat_wave_library_NERC_average_pop.zip"
+        },
+        "metadata": {},
+        "mimetype": "application/zip",
+        "size": 639608,
+        "storage_class": "L"
+      }
+    },
+    "order": [],
+    "total_bytes": 4314071
+  },
+  "id": "15306963",
+  "is_draft": false,
+  "is_published": true,
+  "links": {
+    "access": "https://zenodo.org/api/records/15306963/access",
+    "access_grants": "https://zenodo.org/api/records/15306963/access/grants",
+    "access_links": "https://zenodo.org/api/records/15306963/access/links",
+    "access_request": "https://zenodo.org/api/records/15306963/access/request",
+    "access_users": "https://zenodo.org/api/records/15306963/access/users",
+    "archive": "https://zenodo.org/api/records/15306963/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15306963/media-files-archive",
+    "communities": "https://zenodo.org/api/records/15306963/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15306963/communities-suggestions",
+    "doi": "https://doi.org/10.5281/zenodo.15306963",
+    "draft": "https://zenodo.org/api/records/15306963/draft",
+    "file_modification": "https://zenodo.org/api/records/15306963/file-modification",
+    "files": "https://zenodo.org/api/records/15306963/files",
+    "latest": "https://zenodo.org/api/records/15306963/versions/latest",
+    "latest_html": "https://zenodo.org/records/15306963/latest",
+    "media_files": "https://zenodo.org/api/records/15306963/media-files",
+    "parent": "https://zenodo.org/api/records/14193944",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14193944",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14193944",
+    "parent_html": "https://zenodo.org/records/14193944",
+    "preview_html": "https://zenodo.org/records/15306963?preview=1",
+    "quota_increase": "https://zenodo.org/api/records/15306963/quota-increase",
+    "request_deletion": "https://zenodo.org/api/records/15306963/request-deletion",
+    "requests": "https://zenodo.org/api/records/15306963/requests",
+    "reserve_doi": "https://zenodo.org/api/records/15306963/draft/pids/doi",
+    "self": "https://zenodo.org/api/records/15306963",
+    "self_doi": "https://doi.org/10.5281/zenodo.15306963",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15306963",
+    "self_html": "https://zenodo.org/records/15306963",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15306963/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15306963/sequence/default",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:15306963:NERC%20subregions%20with%20mean%20temperature.tif/full/%5E10,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:15306963:NERC%20subregions%20with%20mean%20temperature.tif/full/%5E100,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:15306963:NERC%20subregions%20with%20mean%20temperature.tif/full/%5E1200,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:15306963:NERC%20subregions%20with%20mean%20temperature.tif/full/%5E250,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:15306963:NERC%20subregions%20with%20mean%20temperature.tif/full/%5E50,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:15306963:NERC%20subregions%20with%20mean%20temperature.tif/full/%5E750,/0/default.jpg"
+    },
+    "versions": "https://zenodo.org/api/records/15306963/versions"
+  },
+  "media_files": {
+    "count": 1,
+    "enabled": true,
+    "entries": {
+      "NERC subregions with mean temperature.tif.ptif": {
+        "access": {
+          "hidden": true
+        },
+        "ext": "ptif",
+        "id": "3a933549-d53f-4ccd-8cb9-e8485d5071d3",
+        "key": "NERC subregions with mean temperature.tif.ptif",
+        "links": {
+          "content": "https://zenodo.org/api/records/15306963/files/NERC%20subregions%20with%20mean%20temperature.tif.ptif/content",
+          "self": "https://zenodo.org/api/records/15306963/files/NERC%20subregions%20with%20mean%20temperature.tif.ptif"
+        },
+        "metadata": null,
+        "mimetype": "application/octet-stream",
+        "processor": {
+          "source_file_id": "a17c229a-c754-45fd-9e5d-9a8ce0c9e2ca",
+          "status": "finished",
+          "type": "image-tiles"
+        },
+        "size": 0,
+        "storage_class": "L"
+      }
+    },
+    "order": [],
+    "total_bytes": 0
+  },
+  "metadata": {
+    "creators": [
+      {
+        "affiliations": [
+          {
+            "id": "05h992307",
+            "identifiers": [
+              {
+                "identifier": "05h992307",
+                "scheme": "ror"
+              },
+              {
+                "identifier": "grid.451303.0",
+                "scheme": "grid"
+              },
+              {
+                "identifier": "0000 0001 2218 3491",
+                "scheme": "isni"
+              }
+            ],
+            "name": "Pacific Northwest National Laboratory"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Wan",
+          "given_name": "Heng",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-3747-6964",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Wan, Heng",
+          "type": "personal"
+        },
+        "role": {
+          "id": "producer",
+          "title": {
+            "de": "ProduzentIn",
+            "en": "Producer"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "id": "05h992307",
+            "identifiers": [
+              {
+                "identifier": "05h992307",
+                "scheme": "ror"
+              },
+              {
+                "identifier": "grid.451303.0",
+                "scheme": "grid"
+              },
+              {
+                "identifier": "0000 0001 2218 3491",
+                "scheme": "isni"
+              }
+            ],
+            "name": "Pacific Northwest National Laboratory"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Burleyson",
+          "given_name": "Casey",
+          "name": "Burleyson, Casey",
+          "type": "personal"
+        },
+        "role": {
+          "id": "projectmember",
+          "title": {
+            "de": "Projektmitglied",
+            "en": "Project member"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "id": "05h992307",
+            "identifiers": [
+              {
+                "identifier": "05h992307",
+                "scheme": "ror"
+              },
+              {
+                "identifier": "grid.451303.0",
+                "scheme": "grid"
+              },
+              {
+                "identifier": "0000 0001 2218 3491",
+                "scheme": "isni"
+              }
+            ],
+            "name": "Pacific Northwest National Laboratory"
+          },
+          {
+            "id": "00cvxb145",
+            "identifiers": [
+              {
+                "identifier": "00cvxb145",
+                "scheme": "ror"
+              },
+              {
+                "identifier": "grid.34477.33",
+                "scheme": "grid"
+              },
+              {
+                "identifier": "0000 0001 2298 6657",
+                "scheme": "isni"
+              }
+            ],
+            "name": "University of Washington"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Voisin",
+          "given_name": "Nathalie",
+          "name": "Voisin, Nathalie",
+          "type": "personal"
+        },
+        "role": {
+          "id": "supervisor",
+          "title": {
+            "de": "SupervisorIn",
+            "en": "Supervisor"
+          }
+        }
+      }
+    ],
+    "description": "<p>This <strong>Extreme Thermal Event Library</strong> provides comprehensive records of heat wave and cold snap events from 1980 to 2024, aggregated at the North American Electric Reliability Corporation (NERC) subregion level for the conterminous United States. A map of NERC subregions with county-level mean temperatures is included in the file <strong>'NERC_subregions_with_mean_temperature.tif'</strong>.</p>\n<p>The heat wave and cold snap events were identified using temperature data simulated by the Thermodynamic Global Warming (TGW) model. The raw TGW hourly temperature data (at a 12-km resolution) was aggregated to the county level using spatial averaging within county boundaries. Daily mean, maximum, and minimum temperatures were then derived from the hourly surface air temperature data for each county. Subsequently, the county-level daily temperatures were spatially aggregated to the NERC subregion level using three distinct spatial aggregation methods:</p>\n<ol>\n<li><strong>Simple Mean (SM)</strong>: A simple average of county-level temperatures.</li>\n<li><strong>Area-Weighted Mean (MWA)</strong>: Weighted by the area of each county.</li>\n<li><strong>Population-Weighted Mean (MWP)</strong>: Weighted by the population of each county.</li>\n</ol>\n<p>The database includes separate zipped files for each spatial aggregation method:</p>\n<ul>\n<li><strong>\"heat_wave_library_NERC_average.zip\"</strong> and <strong>\"cold_snap_library_NERC_average.zip\"</strong> contain events based on the SM method.</li>\n<li><strong>\"heat_wave_library_NERC_average_area.zip\"</strong> and <strong>\"cold_snap_library_NERC_average_area.zip\"</strong> contain events based on the MWA method.</li>\n<li><strong>\"heat_wave_library_NERC_average_pop.zip\"</strong> and <strong>\"cold_snap_library_NERC_average_pop.zip\"</strong> contain events based on the MWP method.</li>\n</ul>\n<p>Each zipped file includes 12 event libraries, corresponding to 12 different event definitions. Details about these definitions are provided in the file <strong>'Event definitions.docx'</strong>.</p>\n<p>&nbsp;</p>\n<h3><strong>Event Library Structure</strong></h3>\n<p>Each row in an event library represents one detected thermal event. The columns in the library are defined as follows:</p>\n<ul>\n<li><strong>start_date</strong>: Start date of the event.</li>\n<li><strong>end_date</strong>: End date of the event.</li>\n<li><strong>centroid_date</strong>: The centroid date, calculated as the midpoint between the start and end dates.</li>\n<li><strong>highest_temperature / lowest_temperature</strong>: The highest daily maximum temperature (for heat waves) or lowest daily minimum temperature (for cold snaps), in Kelvin.</li>\n<li><strong>duration</strong>: Duration of the event in days.</li>\n<li><strong>NERC_ID</strong>: Identifier for the NERC subregion.</li>\n<li><strong>spatial_coverage</strong>: The spatial coverage of the event within the NERC subregion, expressed as the percentage of counties experiencing the event relative to the total number of counties in the subregion.</li>\n</ul>",
+    "languages": [
+      {
+        "id": "eng",
+        "title": {
+          "en": "English"
+        }
+      }
+    ],
+    "publication_date": "2025-04-29",
+    "publisher": "Zenodo",
+    "resource_type": {
+      "id": "dataset",
+      "title": {
+        "de": "Datensatz",
+        "en": "Dataset"
+      }
+    },
+    "rights": [
+      {
+        "description": {
+          "en": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited."
+        },
+        "icon": "cc-by-icon",
+        "id": "cc-by-4.0",
+        "props": {
+          "scheme": "spdx",
+          "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        "title": {
+          "en": "Creative Commons Attribution 4.0 International"
+        }
+      }
+    ],
+    "subjects": [
+      {
+        "subject": "heat wave"
+      },
+      {
+        "subject": "cold snap"
+      },
+      {
+        "id": "mesh:D000080165",
+        "scheme": "MeSH",
+        "subject": "Extreme Weather"
+      },
+      {
+        "subject": "united states"
+      },
+      {
+        "subject": "NERC"
+      }
+    ],
+    "title": "Heat wave and cold snap event library under various technical choices for NERC subregions in the conterminous U.S. (1980 - 2024)"
+  },
+  "parent": {
+    "access": {
+      "owned_by": {
+        "user": "248042"
+      },
+      "settings": {
+        "accept_conditions_text": null,
+        "allow_guest_requests": false,
+        "allow_user_requests": false,
+        "secret_link_expiration": 0
+      }
+    },
+    "communities": {},
+    "id": "14193944",
+    "pids": {
+      "doi": {
+        "client": "datacite",
+        "identifier": "10.5281/zenodo.14193944",
+        "provider": "datacite"
+      }
+    }
+  },
+  "pids": {
+    "doi": {
+      "client": "datacite",
+      "identifier": "10.5281/zenodo.15306963",
+      "provider": "datacite"
+    },
+    "oai": {
+      "identifier": "oai:zenodo.org:15306963",
+      "provider": "oai"
+    }
+  },
+  "revision_id": 6,
+  "stats": {
+    "all_versions": {
+      "data_volume": 146552565.0,
+      "downloads": 292,
+      "unique_downloads": 291,
+      "unique_views": 192,
+      "views": 225
+    },
+    "this_version": {
+      "data_volume": 87200932.0,
+      "downloads": 166,
+      "unique_downloads": 166,
+      "unique_views": 91,
+      "views": 109
+    }
+  },
+  "status": "published",
+  "swh": {},
+  "updated": "2025-05-11T00:27:48.813632+00:00",
+  "versions": {
+    "index": 2,
+    "is_latest": true
+  }
+}
