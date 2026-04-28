@@ -47,4 +47,4 @@ def reupload_file_to_record(record_id, file_path="data.zip"):
 
 
 # Usage
-reupload_file_to_record("YOUR_RECORD_ID_HERE", "data.zip")
+reupload_file_to_record("d1arf-v1m22", "data.zip")
