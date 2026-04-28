@@ -12,14 +12,14 @@ def replace_file(record_id, file_path="data.zip"):
     files_service = current_rdm_records_service.draft_files
 
     with UnitOfWork(db.session) as uow:
-        # 1. Create draft
+        # Create draft from existing record
         draft = current_rdm_records_service.edit(
             system_identity,
             record_id,
             uow=uow,
         )
 
-        # 2. Delete ALL existing files (important for locked bucket)
+        # Remove existing files (safe cleanup)
         existing_files = files_service.list_files(
             system_identity,
             draft.id,
@@ -33,7 +33,7 @@ def replace_file(record_id, file_path="data.zip"):
                 uow=uow,
             )
 
-        # 3. Initialize new file
+        # Initialize new file
         files_service.init_files(
             system_identity,
             draft.id,
@@ -41,7 +41,7 @@ def replace_file(record_id, file_path="data.zip"):
             uow=uow,
         )
 
-        # 4. Upload new content
+        # Upload file content
         with open(file_path, "rb") as fp:
             files_service.set_file_content(
                 system_identity,
@@ -51,7 +51,7 @@ def replace_file(record_id, file_path="data.zip"):
                 uow=uow,
             )
 
-        # 5. Commit
+        # Commit file
         files_service.commit_file(
             system_identity,
             draft.id,
@@ -59,7 +59,7 @@ def replace_file(record_id, file_path="data.zip"):
             uow=uow,
         )
 
-        # 6. Publish (creates NEW version + new bucket linkage)
+        # Publish new version
         record = current_rdm_records_service.publish(
             system_identity,
             draft.id,
@@ -68,4 +68,11 @@ def replace_file(record_id, file_path="data.zip"):
 
         uow.commit()
 
-    print(f"✅ File replaced for record {record_id}")
+    print(f"✅ Replaced file for record {record_id}")
+
+
+# ----------------------------
+# RUN IT HERE
+# ----------------------------
+if __name__ == "__main__":
+    replace_file("d1arf-v1m22", "data.zip")
