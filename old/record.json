@@ -67,13 +67,7 @@
     "publication_date": "2026-04-24",
     "publisher": "rdm-app",
     "resource_type": {
-      "id": "dataset",
-      "title": {
-        "cs": "Datov\u00e1 sada",
-        "de": "Datensatz",
-        "en": "Dataset",
-        "sv": "Dataset"
-      }
+      "id": "dataset"
     },
     "rights": [
       {
@@ -91,7 +85,7 @@
         }
       }
     ],
-    "title": "Brackish Groundwater WITH FILES"
+    "title": "Brackish Groundwater WITH FILES NEW NEW"
   },
   "parent": {
     "access": {
