@@ -5,30 +5,23 @@ from invenio_db import db
 from invenio_records_resources.services.uow import UnitOfWork
 
 
-def upload_new_version(record_id, file_path="data.zip"):
+def update_existing_file(record_id, file_path="data.zip"):
     file_path = Path(file_path)
     filename = file_path.name
 
     files_service = current_rdm_records_service.draft_files
 
     with UnitOfWork(db.session) as uow:
-        # create draft of new version
+        # create new version draft
         draft = current_rdm_records_service.edit(
             system_identity,
             record_id,
             uow=uow,
         )
 
-        # DO NOT delete anything (bucket is locked)
+        # DO NOT init_files again (already exists)
 
-        # just add file as new entry
-        files_service.init_files(
-            system_identity,
-            draft.id,
-            data=[{"key": filename}],
-            uow=uow,
-        )
-
+        # overwrite file content only
         with open(file_path, "rb") as fp:
             files_service.set_file_content(
                 system_identity,
@@ -53,8 +46,9 @@ def upload_new_version(record_id, file_path="data.zip"):
 
         uow.commit()
 
-    print(f"✅ New version created for {record_id}")
-    
-    # RUN
+    print(f"✅ Updated file for record {record_id}")
+
+
+# RUN
 if __name__ == "__main__":
-    upload_new_version("d1arf-v1m22", "data.zip")
+    update_existing_file("d1arf-v1m22", "data.zip")
