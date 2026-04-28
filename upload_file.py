@@ -5,32 +5,35 @@ from invenio_db import db
 from invenio_records_resources.services.uow import UnitOfWork
 
 
-def reupload_file_via_draft(record_id, file_path="data.zip"):
+def replace_file(record_id, file_path="data.zip"):
     file_path = Path(file_path)
     filename = file_path.name
 
     files_service = current_rdm_records_service.draft_files
 
     with UnitOfWork(db.session) as uow:
-        # Step 1: Create draft from existing record
+        # 1. Create draft
         draft = current_rdm_records_service.edit(
             system_identity,
             record_id,
             uow=uow,
         )
 
-        # Step 2: (optional) delete existing file if present
-        try:
+        # 2. Delete ALL existing files (important for locked bucket)
+        existing_files = files_service.list_files(
+            system_identity,
+            draft.id,
+        )
+
+        for f in existing_files.entries:
             files_service.delete_file(
                 system_identity,
                 draft.id,
-                filename,
+                f.key,
                 uow=uow,
             )
-        except Exception:
-            pass  # file may not exist, ignore
 
-        # Step 3: Initialize file
+        # 3. Initialize new file
         files_service.init_files(
             system_identity,
             draft.id,
@@ -38,17 +41,17 @@ def reupload_file_via_draft(record_id, file_path="data.zip"):
             uow=uow,
         )
 
-        # Step 4: Upload content
-        with open(file_path, "rb") as f:
+        # 4. Upload new content
+        with open(file_path, "rb") as fp:
             files_service.set_file_content(
                 system_identity,
                 draft.id,
                 filename,
-                f,
+                fp,
                 uow=uow,
             )
 
-        # Step 5: Commit file (critical)
+        # 5. Commit
         files_service.commit_file(
             system_identity,
             draft.id,
@@ -56,7 +59,7 @@ def reupload_file_via_draft(record_id, file_path="data.zip"):
             uow=uow,
         )
 
-        # Step 6: Publish new version
+        # 6. Publish (creates NEW version + new bucket linkage)
         record = current_rdm_records_service.publish(
             system_identity,
             draft.id,
@@ -65,8 +68,4 @@ def reupload_file_via_draft(record_id, file_path="data.zip"):
 
         uow.commit()
 
-    print(f"✅ File reuploaded and record {record_id} updated")
-
-
-# Usage
-reupload_file_via_draft("d1arf-v1m22", "data.zip")
+    print(f"✅ File replaced for record {record_id}")
