@@ -33,7 +33,7 @@ try:
     with UnitOfWork(db.session) as uow:
         print("Deleting record...")
         current_rdm_records_service.delete_record(
-            system_identity, RECORD_ID, uow=uow
+            system_identity, RECORD_ID, data={}, uow=uow
         )
         uow.commit()
         print(f"✓ Record {RECORD_ID} has been deleted successfully!")
