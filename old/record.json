@@ -67,7 +67,13 @@
     "publication_date": "2026-04-24",
     "publisher": "rdm-app",
     "resource_type": {
-      "id": "other"
+      "id": "dataset",
+      "title": {
+        "cs": "Datov\u00e1 sada",
+        "de": "Datensatz",
+        "en": "Dataset",
+        "sv": "Dataset"
+      }
     },
     "rights": [
       {
