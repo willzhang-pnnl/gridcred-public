@@ -7,7 +7,7 @@ from invenio_records_resources.services.uow import UnitOfWork
 from io import BytesIO
 
 
-def create_record_from_file(filename="record-zen.json"):
+def create_record_from_file(filename="record.json"):
     """Create and publish a record by reading JSON from a file."""
 
     # Read record data from file in same directory
@@ -25,8 +25,8 @@ def create_record_from_file(filename="record-zen.json"):
 
         files_service = current_rdm_records_service.draft_files  
               
-        # Use the provided file or default to data.zip  
-        upload_filename = "data.zip"  
+        # Use the provided file or default to wildfire_risk_2025.xlsx  
+        upload_filename = "wildfire_risk_2025.xlsx"  
           
         files_service.init_files(  
             system_identity, draft.id, data=[{"key": Path(upload_filename).name}], uow=uow  
