@@ -4,7 +4,7 @@ from invenio_db import db
 from invenio_records_resources.services.uow import UnitOfWork
 
 # Hard-coded record ID to delete
-RECORD_ID = "qcdqh-7gc67"  # Change this to the record you want to delete
+RECORD_ID = "d1arf-v1m22"  # Change this to the record you want to delete
 
 print(f"Deleting record: {RECORD_ID}")
 
