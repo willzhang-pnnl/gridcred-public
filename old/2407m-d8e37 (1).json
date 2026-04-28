@@ -8,9 +8,12 @@
     "record": "public",
     "status": "open"
   },
-  "created": "2026-04-24T23:35:41.610291+00:00",
+  "created": "2026-04-25T01:30:26.576300+00:00",
   "custom_fields": {},
-  "expires_at": "2026-04-24 23:35:41.610272",
+  "deletion_status": {
+    "is_deleted": false,
+    "status": "P"
+  },
   "files": {
     "count": 1,
     "enabled": true,
@@ -23,6 +26,10 @@
         "ext": "zip",
         "id": "8209d44b-ccc8-407b-a0f4-85e943598054",
         "key": "data.zip",
+        "links": {
+          "content": "https://atlas.dev.pnnl.gov/api/records/2407m-d8e37/files/data.zip/content",
+          "self": "https://atlas.dev.pnnl.gov/api/records/2407m-d8e37/files/data.zip"
+        },
         "metadata": null,
         "mimetype": "application/zip",
         "size": 4315623,
@@ -32,35 +39,35 @@
     "order": [],
     "total_bytes": 4315623
   },
-  "id": "rmt9h-aw752",
-  "internal_notes": [],
-  "is_draft": true,
+  "id": "2407m-d8e37",
+  "is_draft": false,
   "is_published": true,
   "links": {
-    "access": "https://127.0.0.1:5000/api/records/rmt9h-aw752/access",
-    "access_grants": "https://127.0.0.1:5000/api/records/rmt9h-aw752/access/grants",
-    "access_groups": "https://127.0.0.1:5000/api/records/rmt9h-aw752/access/groups",
-    "access_links": "https://127.0.0.1:5000/api/records/rmt9h-aw752/access/links",
-    "access_request": "https://127.0.0.1:5000/api/records/rmt9h-aw752/access/request",
-    "access_users": "https://127.0.0.1:5000/api/records/rmt9h-aw752/access/users",
-    "archive": "https://127.0.0.1:5000/api/records/rmt9h-aw752/draft/files-archive",
-    "archive_media": "https://127.0.0.1:5000/api/records/rmt9h-aw752/draft/media-files-archive",
-    "communities": "https://127.0.0.1:5000/api/records/rmt9h-aw752/communities",
-    "communities-suggestions": "https://127.0.0.1:5000/api/records/rmt9h-aw752/communities-suggestions",
-    "files": "https://127.0.0.1:5000/api/records/rmt9h-aw752/draft/files",
-    "media_files": "https://127.0.0.1:5000/api/records/rmt9h-aw752/draft/media-files",
-    "preview_html": "https://127.0.0.1:5000/records/rmt9h-aw752?preview=1",
-    "publish": "https://127.0.0.1:5000/api/records/rmt9h-aw752/draft/actions/publish",
-    "record": "https://127.0.0.1:5000/api/records/rmt9h-aw752",
-    "record_html": "https://127.0.0.1:5000/records/rmt9h-aw752",
-    "requests": "https://127.0.0.1:5000/api/records/rmt9h-aw752/requests",
-    "reserve_doi": "https://127.0.0.1:5000/api/records/rmt9h-aw752/draft/pids/doi",
-    "review": "https://127.0.0.1:5000/api/records/rmt9h-aw752/draft/review",
-    "self": "https://127.0.0.1:5000/api/records/rmt9h-aw752/draft",
-    "self_html": "https://127.0.0.1:5000/uploads/rmt9h-aw752",
-    "self_iiif_manifest": "https://127.0.0.1:5000/api/iiif/draft:rmt9h-aw752/manifest",
-    "self_iiif_sequence": "https://127.0.0.1:5000/api/iiif/draft:rmt9h-aw752/sequence/default",
-    "versions": "https://127.0.0.1:5000/api/records/rmt9h-aw752/versions"
+    "access": "https://atlas.dev.pnnl.gov/api/records/2407m-d8e37/access",
+    "access_grants": "https://atlas.dev.pnnl.gov/api/records/2407m-d8e37/access/grants",
+    "access_groups": "https://atlas.dev.pnnl.gov/api/records/2407m-d8e37/access/groups",
+    "access_links": "https://atlas.dev.pnnl.gov/api/records/2407m-d8e37/access/links",
+    "access_request": "https://atlas.dev.pnnl.gov/api/records/2407m-d8e37/access/request",
+    "access_users": "https://atlas.dev.pnnl.gov/api/records/2407m-d8e37/access/users",
+    "archive": "https://atlas.dev.pnnl.gov/api/records/2407m-d8e37/files-archive",
+    "archive_media": "https://atlas.dev.pnnl.gov/api/records/2407m-d8e37/media-files-archive",
+    "communities": "https://atlas.dev.pnnl.gov/api/records/2407m-d8e37/communities",
+    "communities-suggestions": "https://atlas.dev.pnnl.gov/api/records/2407m-d8e37/communities-suggestions",
+    "draft": "https://atlas.dev.pnnl.gov/api/records/2407m-d8e37/draft",
+    "files": "https://atlas.dev.pnnl.gov/api/records/2407m-d8e37/files",
+    "latest": "https://atlas.dev.pnnl.gov/api/records/2407m-d8e37/versions/latest",
+    "latest_html": "https://atlas.dev.pnnl.gov/records/2407m-d8e37/latest",
+    "media_files": "https://atlas.dev.pnnl.gov/api/records/2407m-d8e37/media-files",
+    "parent": "https://atlas.dev.pnnl.gov/api/records/bpt30-wb650",
+    "parent_html": "https://atlas.dev.pnnl.gov/records/bpt30-wb650",
+    "preview_html": "https://atlas.dev.pnnl.gov/records/2407m-d8e37?preview=1",
+    "requests": "https://atlas.dev.pnnl.gov/api/records/2407m-d8e37/requests",
+    "reserve_doi": "https://atlas.dev.pnnl.gov/api/records/2407m-d8e37/draft/pids/doi",
+    "self": "https://atlas.dev.pnnl.gov/api/records/2407m-d8e37",
+    "self_html": "https://atlas.dev.pnnl.gov/records/2407m-d8e37",
+    "self_iiif_manifest": "https://atlas.dev.pnnl.gov/api/iiif/record:2407m-d8e37/manifest",
+    "self_iiif_sequence": "https://atlas.dev.pnnl.gov/api/iiif/record:2407m-d8e37/sequence/default",
+    "versions": "https://atlas.dev.pnnl.gov/api/records/2407m-d8e37/versions"
   },
   "media_files": {
     "count": 0,
@@ -167,8 +174,6 @@
   },
   "parent": {
     "access": {
-      "grants": [],
-      "links": [],
       "owned_by": {
         "user": "system"
       },
@@ -180,16 +185,36 @@
       }
     },
     "communities": {},
-    "id": "m6gzp-3z338",
-    "is_verified": true,
+    "id": "bpt30-wb650",
     "pids": {}
   },
-  "revision_id": 18,
+  "pids": {
+    "oai": {
+      "identifier": "oai:rdm-app.com:2407m-d8e37",
+      "provider": "oai"
+    }
+  },
+  "revision_id": 4,
+  "stats": {
+    "all_versions": {
+      "data_volume": 17262492.0,
+      "downloads": 4,
+      "unique_downloads": 4,
+      "unique_views": 13,
+      "views": 18
+    },
+    "this_version": {
+      "data_volume": 17262492.0,
+      "downloads": 4,
+      "unique_downloads": 4,
+      "unique_views": 13,
+      "views": 18
+    }
+  },
   "status": "published",
-  "updated": "2026-04-25T00:03:47.961965+00:00",
+  "updated": "2026-04-25T01:30:27.003304+00:00",
   "versions": {
     "index": 1,
-    "is_latest": true,
-    "is_latest_draft": true
+    "is_latest": true
   }
 }
