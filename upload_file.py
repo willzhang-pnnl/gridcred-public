@@ -5,36 +5,23 @@ from invenio_db import db
 from invenio_records_resources.services.uow import UnitOfWork
 
 
-def replace_file(record_id, file_path="data.zip"):
+def upload_new_version(record_id, file_path="data.zip"):
     file_path = Path(file_path)
     filename = file_path.name
 
     files_service = current_rdm_records_service.draft_files
 
     with UnitOfWork(db.session) as uow:
-        # Create draft from record
+        # create draft of new version
         draft = current_rdm_records_service.edit(
             system_identity,
             record_id,
             uow=uow,
         )
 
-        # List existing files
-        existing_files = files_service.list_files(
-            system_identity,
-            draft.id,
-        )
+        # DO NOT delete anything (bucket is locked)
 
-        # FIX: dict access instead of attribute access
-        for f in existing_files.entries:
-            files_service.delete_file(
-                system_identity,
-                draft.id,
-                f["key"],   # <-- FIXED HERE
-                uow=uow,
-            )
-
-        # Init new file
+        # just add file as new entry
         files_service.init_files(
             system_identity,
             draft.id,
@@ -42,7 +29,6 @@ def replace_file(record_id, file_path="data.zip"):
             uow=uow,
         )
 
-        # Upload content
         with open(file_path, "rb") as fp:
             files_service.set_file_content(
                 system_identity,
@@ -52,7 +38,6 @@ def replace_file(record_id, file_path="data.zip"):
                 uow=uow,
             )
 
-        # Commit
         files_service.commit_file(
             system_identity,
             draft.id,
@@ -60,7 +45,6 @@ def replace_file(record_id, file_path="data.zip"):
             uow=uow,
         )
 
-        # Publish new version
         record = current_rdm_records_service.publish(
             system_identity,
             draft.id,
@@ -69,9 +53,8 @@ def replace_file(record_id, file_path="data.zip"):
 
         uow.commit()
 
-    print(f"✅ Replaced file for record {record_id}")
-
-
-# RUN
+    print(f"✅ New version created for {record_id}")
+    
+    # RUN
 if __name__ == "__main__":
-    replace_file("d1arf-v1m22", "data.zip")
+    upload_new_version("d1arf-v1m22", "data.zip")
