@@ -1,69 +1,104 @@
 import json
+import traceback
 from pathlib import Path
+
 from invenio_rdm_records.proxies import current_rdm_records_service
 from invenio_access.permissions import system_identity
 from invenio_db import db
 from invenio_records_resources.services.uow import UnitOfWork
-import traceback
 
 
+def sanitize_record(record_data):
+    """
+    Convert exported Invenio JSON into a minimal valid create payload.
+    This removes all system-managed / invalid fields.
+    """
+
+    metadata = record_data.get("metadata", {})
+
+    return {
+        "metadata": {
+            "title": metadata.get("title", "Untitled"),
+            "publication_date": (
+                metadata.get("publication_date", "2016").split("/")[0]
+                if metadata.get("publication_date")
+                else "2016"
+            ),
+            "resource_type": metadata.get("resource_type", {"id": "dataset"}),
+            "creators": metadata.get(
+                "creators",
+                [
+                    {
+                        "person_or_org": {
+                            "type": "organizational",
+                            "name": "Unknown"
+                        }
+                    }
+                ],
+            ),
+            "description": metadata.get("description", "")
+        },
+        "files": {"enabled": False},
+        "access": {
+            "record": "public",
+            "files": "public"
+        }
+    }
 
 
-def create_record_from_dict(record_data, uow):
-    """Create and publish a single record from a dict."""
-    draft = current_rdm_records_service.create(
-        system_identity, record_data, uow=uow
-    )
+def create_and_publish(record_data):
+    """Create + publish a single record inside a unit of work."""
+    with UnitOfWork(db.session) as uow:
+        draft = current_rdm_records_service.create(
+            system_identity, record_data, uow=uow
+        )
 
-    record = current_rdm_records_service.publish(
-        system_identity, draft.id, uow=uow
-    )
+        record = current_rdm_records_service.publish(
+            system_identity, draft.id, uow=uow
+        )
+
+        uow.commit()
 
     return record
 
 
-def upload_records_from_directory():
-    """Upload all JSON records from ./records next to this script."""
-    
-    # 👇 Resolve path relative to this script file
+def ingest_all_records():
+    """Main entry point: ingest all JSON files in ./records"""
+
     script_dir = Path(__file__).parent
     records_dir = script_dir / "records"
 
-    if not records_dir.exists() or not records_dir.is_dir():
-        raise ValueError(f"'records' directory not found at: {records_dir}")
+    if not records_dir.exists():
+        raise ValueError(f"Missing records directory: {records_dir}")
 
-    json_files = list(records_dir.glob("*.json"))
+    json_files = sorted(records_dir.glob("*.json"))
 
     if not json_files:
-        print("No JSON files found in 'records' directory.")
+        print("No JSON files found.")
         return []
 
-    created_records = []
+    results = []
 
     for json_file in json_files:
-        print(f"Processing: {json_file.name}")
+        print(f"\n➡ Processing {json_file.name}")
 
         try:
-            with open(json_file, "r") as f:
-                record_data = json.load(f)
+            with open(json_file, "r", encoding="utf-8") as f:
+                raw_data = json.load(f)
 
-            # Optional: ensure no files block exists
-            record_data.setdefault("files", {"enabled": False})
+            cleaned_data = sanitize_record(raw_data)
 
-            with UnitOfWork(db.session) as uow:
-                record = create_record_from_dict(record_data, uow)
-                uow.commit()
+            record = create_and_publish(cleaned_data)
 
-            created_records.append(record)
-            print(f"✔ Successfully created: {json_file.name}")
+            results.append(record)
+            print(f"✔ Success: {json_file.name}")
 
         except Exception:
-            print(f"\n✖ Failed for {json_file.name}")
+            print(f"✖ Failed: {json_file.name}")
             traceback.print_exc()
 
-    return created_records
+    return results
 
 
-# Usage
 if __name__ == "__main__":
-    upload_records_from_directory()
+    ingest_all_records()
