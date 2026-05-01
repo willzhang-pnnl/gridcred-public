@@ -26,7 +26,7 @@ def create_record_from_file(filename="record.json"):
         files_service = current_rdm_records_service.draft_files  
               
         # Files to upload
-        upload_filenames = ["data.zip"]
+        upload_filenames = ["data.tar"]
           
         # Initialize all files at once
         files_service.init_files(  
