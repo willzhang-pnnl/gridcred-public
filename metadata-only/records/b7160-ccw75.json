@@ -1,0 +1,187 @@
+{
+  "access": {
+    "embargo": {
+      "active": false,
+      "reason": null
+    },
+    "files": "public",
+    "record": "public",
+    "status": "metadata-only"
+  },
+  "created": "2026-03-04T21:15:00.399398+00:00",
+  "custom_fields": {},
+  "expires_at": "2026-03-04 21:15:00.399374",
+  "files": {
+    "count": 0,
+    "enabled": false,
+    "entries": {},
+    "order": [],
+    "total_bytes": 0
+  },
+  "id": "b7160-ccw75",
+  "is_draft": true,
+  "is_published": false,
+  "links": {
+    "access": "https://atlastest.pnnl.gov/api/records/b7160-ccw75/access",
+    "access_grants": "https://atlastest.pnnl.gov/api/records/b7160-ccw75/access/grants",
+    "access_groups": "https://atlastest.pnnl.gov/api/records/b7160-ccw75/access/groups",
+    "access_links": "https://atlastest.pnnl.gov/api/records/b7160-ccw75/access/links",
+    "access_request": "https://atlastest.pnnl.gov/api/records/b7160-ccw75/access/request",
+    "access_users": "https://atlastest.pnnl.gov/api/records/b7160-ccw75/access/users",
+    "archive": "https://atlastest.pnnl.gov/api/records/b7160-ccw75/draft/files-archive",
+    "archive_media": "https://atlastest.pnnl.gov/api/records/b7160-ccw75/draft/media-files-archive",
+    "communities": "https://atlastest.pnnl.gov/api/records/b7160-ccw75/communities",
+    "communities-suggestions": "https://atlastest.pnnl.gov/api/records/b7160-ccw75/communities-suggestions",
+    "files": "https://atlastest.pnnl.gov/api/records/b7160-ccw75/draft/files",
+    "media_files": "https://atlastest.pnnl.gov/api/records/b7160-ccw75/draft/media-files",
+    "preview_html": "https://atlastest.pnnl.gov/records/b7160-ccw75?preview=1",
+    "publish": "https://atlastest.pnnl.gov/api/records/b7160-ccw75/draft/actions/publish",
+    "record": "https://atlastest.pnnl.gov/api/records/b7160-ccw75",
+    "record_html": "https://atlastest.pnnl.gov/records/b7160-ccw75",
+    "requests": "https://atlastest.pnnl.gov/api/records/b7160-ccw75/requests",
+    "reserve_doi": "https://atlastest.pnnl.gov/api/records/b7160-ccw75/draft/pids/doi",
+    "review": "https://atlastest.pnnl.gov/api/records/b7160-ccw75/draft/review",
+    "self": "https://atlastest.pnnl.gov/api/records/b7160-ccw75/draft",
+    "self_html": "https://atlastest.pnnl.gov/uploads/b7160-ccw75",
+    "self_iiif_manifest": "https://atlastest.pnnl.gov/api/iiif/draft:b7160-ccw75/manifest",
+    "self_iiif_sequence": "https://atlastest.pnnl.gov/api/iiif/draft:b7160-ccw75/sequence/default",
+    "submit-review": "https://atlastest.pnnl.gov/api/records/b7160-ccw75/draft/actions/submit-review",
+    "versions": "https://atlastest.pnnl.gov/api/records/b7160-ccw75/versions"
+  },
+  "media_files": {
+    "count": 0,
+    "enabled": false,
+    "entries": {},
+    "order": [],
+    "total_bytes": 0
+  },
+  "metadata": {
+    "additional_descriptions": [
+      {
+        "description": "<p>Size of data: ~6GB</p>",
+        "type": {
+          "id": "technical-info",
+          "title": {
+            "cs": "Technick\u00e9 informace",
+            "de": "Technische Informationen",
+            "en": "Technical info",
+            "sv": "Teknisk information"
+          }
+        }
+      },
+      {
+        "description": "<p>Location: EIOC</p>",
+        "type": {
+          "id": "other",
+          "title": {
+            "cs": "Jin\u00e9",
+            "de": "Sonstige",
+            "en": "Other",
+            "sv": "\u00d6vrig"
+          }
+        }
+      },
+      {
+        "description": "<p>Status of Data: Static</p>",
+        "type": {
+          "id": "technical-info",
+          "title": {
+            "cs": "Technick\u00e9 informace",
+            "de": "Technische Informationen",
+            "en": "Technical info",
+            "sv": "Teknisk information"
+          }
+        }
+      },
+      {
+        "description": "<p>Primary Value to Sector/Lab over Next 5 years:</p>\n<p>Support scenario analysis, control design, operation actions, resource optimization, protection schemes.</p>",
+        "type": {
+          "id": "other",
+          "title": {
+            "cs": "Jin\u00e9",
+            "de": "Sonstige",
+            "en": "Other",
+            "sv": "\u00d6vrig"
+          }
+        }
+      }
+    ],
+    "creators": [
+      {
+        "person_or_org": {
+          "name": "Former Peak RC",
+          "type": "organizational"
+        }
+      }
+    ],
+    "description": "<p>Former Peak RC, historical EMS DTS cases</p>",
+    "identifiers": [
+      {
+        "identifier": "Access Control: Accessible only via WAPA contract and restricted use by WIDSA",
+        "scheme": "other"
+      }
+    ],
+    "publication_date": "2019",
+    "resource_type": {
+      "id": "dataset",
+      "title": {
+        "de": "Datensatz",
+        "en": "Dataset",
+        "sv": "Dataset"
+      }
+    },
+    "rights": [
+      {
+        "description": {
+          "en": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited."
+        },
+        "icon": "cc-by-icon",
+        "id": "cc-by-4.0",
+        "props": {
+          "scheme": "spdx",
+          "url": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "title": {
+          "en": "Creative Commons Attribution 4.0 International"
+        }
+      }
+    ],
+    "title": "Peak RC EMS-DTS Archive"
+  },
+  "parent": {
+    "access": {
+      "grants": [],
+      "links": [],
+      "owned_by": {
+        "user": "42"
+      },
+      "settings": {
+        "accept_conditions_text": null,
+        "allow_guest_requests": false,
+        "allow_user_requests": false,
+        "secret_link_expiration": 0
+      }
+    },
+    "communities": {},
+    "id": "x8kmg-3nq56",
+    "pids": {},
+    "review": {
+      "id": "c3747114-a6ff-480e-8ff8-a976c0d4cab2",
+      "links": {},
+      "receiver": {
+        "community": "8c0387c1-b392-4885-a0de-f73613cf302a"
+      },
+      "status": "submitted",
+      "title": "",
+      "type": "community-submission"
+    }
+  },
+  "pids": {},
+  "revision_id": 13,
+  "status": "in_review",
+  "updated": "2026-03-06T22:44:24.789289+00:00",
+  "versions": {
+    "index": 1,
+    "is_latest": false
+  }
+}

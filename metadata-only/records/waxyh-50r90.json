@@ -1,0 +1,187 @@
+{
+  "access": {
+    "embargo": {
+      "active": false,
+      "reason": null
+    },
+    "files": "public",
+    "record": "public",
+    "status": "metadata-only"
+  },
+  "created": "2026-03-06T22:51:35.852712+00:00",
+  "custom_fields": {},
+  "expires_at": "2026-03-06 22:51:35.852688",
+  "files": {
+    "count": 0,
+    "enabled": false,
+    "entries": {},
+    "order": [],
+    "total_bytes": 0
+  },
+  "id": "waxyh-50r90",
+  "is_draft": true,
+  "is_published": false,
+  "links": {
+    "access": "https://atlastest.pnnl.gov/api/records/waxyh-50r90/access",
+    "access_grants": "https://atlastest.pnnl.gov/api/records/waxyh-50r90/access/grants",
+    "access_groups": "https://atlastest.pnnl.gov/api/records/waxyh-50r90/access/groups",
+    "access_links": "https://atlastest.pnnl.gov/api/records/waxyh-50r90/access/links",
+    "access_request": "https://atlastest.pnnl.gov/api/records/waxyh-50r90/access/request",
+    "access_users": "https://atlastest.pnnl.gov/api/records/waxyh-50r90/access/users",
+    "archive": "https://atlastest.pnnl.gov/api/records/waxyh-50r90/draft/files-archive",
+    "archive_media": "https://atlastest.pnnl.gov/api/records/waxyh-50r90/draft/media-files-archive",
+    "communities": "https://atlastest.pnnl.gov/api/records/waxyh-50r90/communities",
+    "communities-suggestions": "https://atlastest.pnnl.gov/api/records/waxyh-50r90/communities-suggestions",
+    "files": "https://atlastest.pnnl.gov/api/records/waxyh-50r90/draft/files",
+    "media_files": "https://atlastest.pnnl.gov/api/records/waxyh-50r90/draft/media-files",
+    "preview_html": "https://atlastest.pnnl.gov/records/waxyh-50r90?preview=1",
+    "publish": "https://atlastest.pnnl.gov/api/records/waxyh-50r90/draft/actions/publish",
+    "record": "https://atlastest.pnnl.gov/api/records/waxyh-50r90",
+    "record_html": "https://atlastest.pnnl.gov/records/waxyh-50r90",
+    "requests": "https://atlastest.pnnl.gov/api/records/waxyh-50r90/requests",
+    "reserve_doi": "https://atlastest.pnnl.gov/api/records/waxyh-50r90/draft/pids/doi",
+    "review": "https://atlastest.pnnl.gov/api/records/waxyh-50r90/draft/review",
+    "self": "https://atlastest.pnnl.gov/api/records/waxyh-50r90/draft",
+    "self_html": "https://atlastest.pnnl.gov/uploads/waxyh-50r90",
+    "self_iiif_manifest": "https://atlastest.pnnl.gov/api/iiif/draft:waxyh-50r90/manifest",
+    "self_iiif_sequence": "https://atlastest.pnnl.gov/api/iiif/draft:waxyh-50r90/sequence/default",
+    "submit-review": "https://atlastest.pnnl.gov/api/records/waxyh-50r90/draft/actions/submit-review",
+    "versions": "https://atlastest.pnnl.gov/api/records/waxyh-50r90/versions"
+  },
+  "media_files": {
+    "count": 0,
+    "enabled": false,
+    "entries": {},
+    "order": [],
+    "total_bytes": 0
+  },
+  "metadata": {
+    "additional_descriptions": [
+      {
+        "description": "<p>Size of Data: 8 TB</p>",
+        "type": {
+          "id": "technical-info",
+          "title": {
+            "cs": "Technick\u00e9 informace",
+            "de": "Technische Informationen",
+            "en": "Technical info",
+            "sv": "Teknisk information"
+          }
+        }
+      },
+      {
+        "description": "<p>Location: EIOC</p>",
+        "type": {
+          "id": "other",
+          "title": {
+            "cs": "Jin\u00e9",
+            "de": "Sonstige",
+            "en": "Other",
+            "sv": "\u00d6vrig"
+          }
+        }
+      },
+      {
+        "description": "<p>Status of Data: Static&nbsp;</p>",
+        "type": {
+          "id": "technical-info",
+          "title": {
+            "cs": "Technick\u00e9 informace",
+            "de": "Technische Informationen",
+            "en": "Technical info",
+            "sv": "Teknisk information"
+          }
+        }
+      },
+      {
+        "description": "<p>Primary Value to Sector/Lab over Next 5 years:</p>\n<p>Understanding of customer behaviors, support demand response studies.&nbsp;</p>",
+        "type": {
+          "id": "other",
+          "title": {
+            "cs": "Jin\u00e9",
+            "de": "Sonstige",
+            "en": "Other",
+            "sv": "\u00d6vrig"
+          }
+        }
+      }
+    ],
+    "creators": [
+      {
+        "person_or_org": {
+          "name": "Power companies in the 5 NW states (60,000 smart meters)",
+          "type": "organizational"
+        }
+      }
+    ],
+    "description": "<p>Power companies in the 5 NW states (60,000 smart meters); Smart meter data</p>",
+    "identifiers": [
+      {
+        "identifier": "Access Control: Publicly accessible",
+        "scheme": "other"
+      }
+    ],
+    "publication_date": "2012/2015",
+    "resource_type": {
+      "id": "dataset",
+      "title": {
+        "de": "Datensatz",
+        "en": "Dataset",
+        "sv": "Dataset"
+      }
+    },
+    "rights": [
+      {
+        "description": {
+          "en": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited."
+        },
+        "icon": "cc-by-icon",
+        "id": "cc-by-4.0",
+        "props": {
+          "scheme": "spdx",
+          "url": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "title": {
+          "en": "Creative Commons Attribution 4.0 International"
+        }
+      }
+    ],
+    "title": "Pacific Northwest Smart Grid Demo Project"
+  },
+  "parent": {
+    "access": {
+      "grants": [],
+      "links": [],
+      "owned_by": {
+        "user": "42"
+      },
+      "settings": {
+        "accept_conditions_text": null,
+        "allow_guest_requests": false,
+        "allow_user_requests": false,
+        "secret_link_expiration": 0
+      }
+    },
+    "communities": {},
+    "id": "yc2pc-p5z04",
+    "pids": {},
+    "review": {
+      "id": "71bc4ce5-00a4-4dc4-83af-8368f745c990",
+      "links": {},
+      "receiver": {
+        "community": "8c0387c1-b392-4885-a0de-f73613cf302a"
+      },
+      "status": "submitted",
+      "title": "",
+      "type": "community-submission"
+    }
+  },
+  "pids": {},
+  "revision_id": 7,
+  "status": "in_review",
+  "updated": "2026-03-06T22:51:46.407530+00:00",
+  "versions": {
+    "index": 1,
+    "is_latest": false
+  }
+}

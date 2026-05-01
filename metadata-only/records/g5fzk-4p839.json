@@ -1,0 +1,196 @@
+{
+  "access": {
+    "embargo": {
+      "active": false,
+      "reason": null
+    },
+    "files": "public",
+    "record": "public",
+    "status": "metadata-only"
+  },
+  "created": "2026-02-27T19:58:52.386971+00:00",
+  "custom_fields": {},
+  "expires_at": "2026-02-27 19:58:52.386949",
+  "files": {
+    "count": 0,
+    "enabled": false,
+    "entries": {},
+    "order": [],
+    "total_bytes": 0
+  },
+  "id": "g5fzk-4p839",
+  "is_draft": true,
+  "is_published": false,
+  "links": {
+    "access": "https://atlastest.pnnl.gov/api/records/g5fzk-4p839/access",
+    "access_grants": "https://atlastest.pnnl.gov/api/records/g5fzk-4p839/access/grants",
+    "access_groups": "https://atlastest.pnnl.gov/api/records/g5fzk-4p839/access/groups",
+    "access_links": "https://atlastest.pnnl.gov/api/records/g5fzk-4p839/access/links",
+    "access_request": "https://atlastest.pnnl.gov/api/records/g5fzk-4p839/access/request",
+    "access_users": "https://atlastest.pnnl.gov/api/records/g5fzk-4p839/access/users",
+    "archive": "https://atlastest.pnnl.gov/api/records/g5fzk-4p839/draft/files-archive",
+    "archive_media": "https://atlastest.pnnl.gov/api/records/g5fzk-4p839/draft/media-files-archive",
+    "communities": "https://atlastest.pnnl.gov/api/records/g5fzk-4p839/communities",
+    "communities-suggestions": "https://atlastest.pnnl.gov/api/records/g5fzk-4p839/communities-suggestions",
+    "files": "https://atlastest.pnnl.gov/api/records/g5fzk-4p839/draft/files",
+    "media_files": "https://atlastest.pnnl.gov/api/records/g5fzk-4p839/draft/media-files",
+    "preview_html": "https://atlastest.pnnl.gov/records/g5fzk-4p839?preview=1",
+    "publish": "https://atlastest.pnnl.gov/api/records/g5fzk-4p839/draft/actions/publish",
+    "record": "https://atlastest.pnnl.gov/api/records/g5fzk-4p839",
+    "record_html": "https://atlastest.pnnl.gov/records/g5fzk-4p839",
+    "requests": "https://atlastest.pnnl.gov/api/records/g5fzk-4p839/requests",
+    "reserve_doi": "https://atlastest.pnnl.gov/api/records/g5fzk-4p839/draft/pids/doi",
+    "review": "https://atlastest.pnnl.gov/api/records/g5fzk-4p839/draft/review",
+    "self": "https://atlastest.pnnl.gov/api/records/g5fzk-4p839/draft",
+    "self_html": "https://atlastest.pnnl.gov/uploads/g5fzk-4p839",
+    "self_iiif_manifest": "https://atlastest.pnnl.gov/api/iiif/draft:g5fzk-4p839/manifest",
+    "self_iiif_sequence": "https://atlastest.pnnl.gov/api/iiif/draft:g5fzk-4p839/sequence/default",
+    "submit-review": "https://atlastest.pnnl.gov/api/records/g5fzk-4p839/draft/actions/submit-review",
+    "versions": "https://atlastest.pnnl.gov/api/records/g5fzk-4p839/versions"
+  },
+  "media_files": {
+    "count": 0,
+    "enabled": false,
+    "entries": {},
+    "order": [],
+    "total_bytes": 0
+  },
+  "metadata": {
+    "additional_descriptions": [
+      {
+        "description": "<p>Size of Data: ~20TB, growing&nbsp;</p>",
+        "type": {
+          "id": "technical-info",
+          "title": {
+            "cs": "Technick\u00e9 informace",
+            "de": "Technische Informationen",
+            "en": "Technical info",
+            "sv": "Teknisk information"
+          }
+        }
+      },
+      {
+        "description": "<p>Location: EIOC</p>",
+        "type": {
+          "id": "other",
+          "title": {
+            "cs": "Jin\u00e9",
+            "de": "Sonstige",
+            "en": "Other",
+            "sv": "\u00d6vrig"
+          }
+        }
+      },
+      {
+        "description": "<p>Status of Data: Streaming</p>",
+        "type": {
+          "id": "technical-info",
+          "title": {
+            "cs": "Technick\u00e9 informace",
+            "de": "Technische Informationen",
+            "en": "Technical info",
+            "sv": "Teknisk information"
+          }
+        }
+      },
+      {
+        "description": "<p>Primary Value to Sector/Lab over Next 5 years:</p>\n<p>Uniquely available at research organization. Support event analysis, oscillation assessment, dynamic modeling, system trends of WECC system, with a focus on the Northwest.&nbsp;</p>",
+        "type": {
+          "id": "other",
+          "title": {
+            "cs": "Jin\u00e9",
+            "de": "Sonstige",
+            "en": "Other",
+            "sv": "\u00d6vrig"
+          }
+        }
+      }
+    ],
+    "creators": [
+      {
+        "person_or_org": {
+          "name": "BPA",
+          "type": "organizational"
+        }
+      }
+    ],
+    "description": "<p>12 PMUs covering the Northwest and parts of WECC. Real-time streaming phasor data.&nbsp;</p>",
+    "funding": [
+      {
+        "funder": {
+          "id": "01bj3aw27",
+          "name": "United States Department of Energy"
+        }
+      }
+    ],
+    "identifiers": [
+      {
+        "identifier": "Access Control: NDA required",
+        "scheme": "other"
+      }
+    ],
+    "publication_date": "2010",
+    "publisher": "BPA",
+    "resource_type": {
+      "id": "dataset",
+      "title": {
+        "de": "Datensatz",
+        "en": "Dataset",
+        "sv": "Dataset"
+      }
+    },
+    "rights": [
+      {
+        "description": {
+          "en": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited."
+        },
+        "icon": "cc-by-icon",
+        "id": "cc-by-4.0",
+        "props": {
+          "scheme": "spdx",
+          "url": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "title": {
+          "en": "Creative Commons Attribution 4.0 International"
+        }
+      }
+    ],
+    "title": "BPA PMU Data Stream"
+  },
+  "parent": {
+    "access": {
+      "grants": [],
+      "links": [],
+      "owned_by": {
+        "user": "42"
+      },
+      "settings": {
+        "accept_conditions_text": null,
+        "allow_guest_requests": false,
+        "allow_user_requests": false,
+        "secret_link_expiration": 0
+      }
+    },
+    "communities": {},
+    "id": "kbtr7-e0r17",
+    "pids": {},
+    "review": {
+      "id": "56be5f07-bffa-427a-ba9a-36772f77681a",
+      "links": {},
+      "receiver": {
+        "community": "8c0387c1-b392-4885-a0de-f73613cf302a"
+      },
+      "status": "submitted",
+      "title": "",
+      "type": "community-submission"
+    }
+  },
+  "pids": {},
+  "revision_id": 23,
+  "status": "in_review",
+  "updated": "2026-02-27T20:44:15.792138+00:00",
+  "versions": {
+    "index": 1,
+    "is_latest": false
+  }
+}

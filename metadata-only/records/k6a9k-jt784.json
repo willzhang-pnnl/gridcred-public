@@ -1,0 +1,187 @@
+{
+  "access": {
+    "embargo": {
+      "active": false,
+      "reason": null
+    },
+    "files": "public",
+    "record": "public",
+    "status": "metadata-only"
+  },
+  "created": "2026-03-06T23:02:05.521718+00:00",
+  "custom_fields": {},
+  "expires_at": "2026-03-06 23:02:05.521697",
+  "files": {
+    "count": 0,
+    "enabled": false,
+    "entries": {},
+    "order": [],
+    "total_bytes": 0
+  },
+  "id": "k6a9k-jt784",
+  "is_draft": true,
+  "is_published": false,
+  "links": {
+    "access": "https://atlastest.pnnl.gov/api/records/k6a9k-jt784/access",
+    "access_grants": "https://atlastest.pnnl.gov/api/records/k6a9k-jt784/access/grants",
+    "access_groups": "https://atlastest.pnnl.gov/api/records/k6a9k-jt784/access/groups",
+    "access_links": "https://atlastest.pnnl.gov/api/records/k6a9k-jt784/access/links",
+    "access_request": "https://atlastest.pnnl.gov/api/records/k6a9k-jt784/access/request",
+    "access_users": "https://atlastest.pnnl.gov/api/records/k6a9k-jt784/access/users",
+    "archive": "https://atlastest.pnnl.gov/api/records/k6a9k-jt784/draft/files-archive",
+    "archive_media": "https://atlastest.pnnl.gov/api/records/k6a9k-jt784/draft/media-files-archive",
+    "communities": "https://atlastest.pnnl.gov/api/records/k6a9k-jt784/communities",
+    "communities-suggestions": "https://atlastest.pnnl.gov/api/records/k6a9k-jt784/communities-suggestions",
+    "files": "https://atlastest.pnnl.gov/api/records/k6a9k-jt784/draft/files",
+    "media_files": "https://atlastest.pnnl.gov/api/records/k6a9k-jt784/draft/media-files",
+    "preview_html": "https://atlastest.pnnl.gov/records/k6a9k-jt784?preview=1",
+    "publish": "https://atlastest.pnnl.gov/api/records/k6a9k-jt784/draft/actions/publish",
+    "record": "https://atlastest.pnnl.gov/api/records/k6a9k-jt784",
+    "record_html": "https://atlastest.pnnl.gov/records/k6a9k-jt784",
+    "requests": "https://atlastest.pnnl.gov/api/records/k6a9k-jt784/requests",
+    "reserve_doi": "https://atlastest.pnnl.gov/api/records/k6a9k-jt784/draft/pids/doi",
+    "review": "https://atlastest.pnnl.gov/api/records/k6a9k-jt784/draft/review",
+    "self": "https://atlastest.pnnl.gov/api/records/k6a9k-jt784/draft",
+    "self_html": "https://atlastest.pnnl.gov/uploads/k6a9k-jt784",
+    "self_iiif_manifest": "https://atlastest.pnnl.gov/api/iiif/draft:k6a9k-jt784/manifest",
+    "self_iiif_sequence": "https://atlastest.pnnl.gov/api/iiif/draft:k6a9k-jt784/sequence/default",
+    "submit-review": "https://atlastest.pnnl.gov/api/records/k6a9k-jt784/draft/actions/submit-review",
+    "versions": "https://atlastest.pnnl.gov/api/records/k6a9k-jt784/versions"
+  },
+  "media_files": {
+    "count": 0,
+    "enabled": false,
+    "entries": {},
+    "order": [],
+    "total_bytes": 0
+  },
+  "metadata": {
+    "additional_descriptions": [
+      {
+        "description": "<p>Size of Data: ~1TB</p>",
+        "type": {
+          "id": "technical-info",
+          "title": {
+            "cs": "Technick\u00e9 informace",
+            "de": "Technische Informationen",
+            "en": "Technical info",
+            "sv": "Teknisk information"
+          }
+        }
+      },
+      {
+        "description": "<p>Location: EIOC</p>",
+        "type": {
+          "id": "other",
+          "title": {
+            "cs": "Jin\u00e9",
+            "de": "Sonstige",
+            "en": "Other",
+            "sv": "\u00d6vrig"
+          }
+        }
+      },
+      {
+        "description": "<p>Status of Data: Static</p>",
+        "type": {
+          "id": "technical-info",
+          "title": {
+            "cs": "Technick\u00e9 informace",
+            "de": "Technische Informationen",
+            "en": "Technical info",
+            "sv": "Teknisk information"
+          }
+        }
+      },
+      {
+        "description": "<p>Primary Value to Sector/Lab over Next 5 years:</p>\n<p>Insights of end-use patterns. Support demand response, and load modeling.</p>",
+        "type": {
+          "id": "other",
+          "title": {
+            "cs": "Jin\u00e9",
+            "de": "Sonstige",
+            "en": "Other",
+            "sv": "\u00d6vrig"
+          }
+        }
+      }
+    ],
+    "creators": [
+      {
+        "person_or_org": {
+          "name": "Pacific Northwest consumers",
+          "type": "organizational"
+        }
+      }
+    ],
+    "description": "<p>Pacific Northwest consumers, End-use load profile data</p>",
+    "identifiers": [
+      {
+        "identifier": "Access Control: Publicly accessible",
+        "scheme": "other"
+      }
+    ],
+    "publication_date": "1986/1996",
+    "resource_type": {
+      "id": "dataset",
+      "title": {
+        "de": "Datensatz",
+        "en": "Dataset",
+        "sv": "Dataset"
+      }
+    },
+    "rights": [
+      {
+        "description": {
+          "en": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited."
+        },
+        "icon": "cc-by-icon",
+        "id": "cc-by-4.0",
+        "props": {
+          "scheme": "spdx",
+          "url": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "title": {
+          "en": "Creative Commons Attribution 4.0 International"
+        }
+      }
+    ],
+    "title": "End-Use Load and Consumer Assessment Program (ELCAP) Data"
+  },
+  "parent": {
+    "access": {
+      "grants": [],
+      "links": [],
+      "owned_by": {
+        "user": "42"
+      },
+      "settings": {
+        "accept_conditions_text": null,
+        "allow_guest_requests": false,
+        "allow_user_requests": false,
+        "secret_link_expiration": 0
+      }
+    },
+    "communities": {},
+    "id": "7chcd-2hz08",
+    "pids": {},
+    "review": {
+      "id": "81c7a2ed-ffbd-422b-854a-025e5f60b2ac",
+      "links": {},
+      "receiver": {
+        "community": "8c0387c1-b392-4885-a0de-f73613cf302a"
+      },
+      "status": "submitted",
+      "title": "",
+      "type": "community-submission"
+    }
+  },
+  "pids": {},
+  "revision_id": 7,
+  "status": "in_review",
+  "updated": "2026-03-06T23:02:36.721189+00:00",
+  "versions": {
+    "index": 1,
+    "is_latest": false
+  }
+}
