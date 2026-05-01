@@ -4,6 +4,9 @@ from invenio_rdm_records.proxies import current_rdm_records_service
 from invenio_access.permissions import system_identity
 from invenio_db import db
 from invenio_records_resources.services.uow import UnitOfWork
+import traceback
+
+
 
 
 def create_record_from_dict(record_data, uow):
@@ -54,8 +57,9 @@ def upload_records_from_directory():
             created_records.append(record)
             print(f"✔ Successfully created: {json_file.name}")
 
-        except Exception as e:
-            print(f"✖ Failed for {json_file.name}: {e}")
+        except Exception:
+            print(f"\n✖ Failed for {json_file.name}")
+            traceback.print_exc()
 
     return created_records
 
