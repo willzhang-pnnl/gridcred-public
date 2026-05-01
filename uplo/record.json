@@ -1,0 +1,186 @@
+{
+  "access": {
+    "embargo": {
+      "active": false,
+      "reason": null
+    },
+    "files": "public",
+    "record": "public",
+    "status": "open"
+  },
+  "created": "2026-04-28T21:34:40.852842+00:00",
+  "custom_fields": {},
+  "expires_at": "2026-04-28 21:34:40.852820",
+  "files": {
+    "count": 1,
+    "default_preview": "wildfire_risk_2025.xlsx",
+    "enabled": true,
+    "entries": {
+      "wildfire_risk_2025.xlsx": {
+        "access": {
+          "hidden": false
+        },
+        "key": "wildfire_risk_2025.xlsx",
+        "metadata": null
+      }
+    },
+    "order": [],
+    "total_bytes": 0
+  },
+  "id": "sz0f1-nvn20",
+  "internal_notes": [],
+  "is_draft": true,
+  "is_published": false,
+  "links": {
+    "access": "https://127.0.0.1:5000/api/records/sz0f1-nvn20/access",
+    "access_grants": "https://127.0.0.1:5000/api/records/sz0f1-nvn20/access/grants",
+    "access_groups": "https://127.0.0.1:5000/api/records/sz0f1-nvn20/access/groups",
+    "access_links": "https://127.0.0.1:5000/api/records/sz0f1-nvn20/access/links",
+    "access_request": "https://127.0.0.1:5000/api/records/sz0f1-nvn20/access/request",
+    "access_users": "https://127.0.0.1:5000/api/records/sz0f1-nvn20/access/users",
+    "archive": "https://127.0.0.1:5000/api/records/sz0f1-nvn20/draft/files-archive",
+    "archive_media": "https://127.0.0.1:5000/api/records/sz0f1-nvn20/draft/media-files-archive",
+    "communities": "https://127.0.0.1:5000/api/records/sz0f1-nvn20/communities",
+    "communities-suggestions": "https://127.0.0.1:5000/api/records/sz0f1-nvn20/communities-suggestions",
+    "files": "https://127.0.0.1:5000/api/records/sz0f1-nvn20/draft/files",
+    "media_files": "https://127.0.0.1:5000/api/records/sz0f1-nvn20/draft/media-files",
+    "preview_html": "https://127.0.0.1:5000/records/sz0f1-nvn20?preview=1",
+    "publish": "https://127.0.0.1:5000/api/records/sz0f1-nvn20/draft/actions/publish",
+    "record": "https://127.0.0.1:5000/api/records/sz0f1-nvn20",
+    "record_html": "https://127.0.0.1:5000/records/sz0f1-nvn20",
+    "requests": "https://127.0.0.1:5000/api/records/sz0f1-nvn20/requests",
+    "reserve_doi": "https://127.0.0.1:5000/api/records/sz0f1-nvn20/draft/pids/doi",
+    "review": "https://127.0.0.1:5000/api/records/sz0f1-nvn20/draft/review",
+    "self": "https://127.0.0.1:5000/api/records/sz0f1-nvn20/draft",
+    "self_html": "https://127.0.0.1:5000/uploads/sz0f1-nvn20",
+    "self_iiif_manifest": "https://127.0.0.1:5000/api/iiif/draft:sz0f1-nvn20/manifest",
+    "self_iiif_sequence": "https://127.0.0.1:5000/api/iiif/draft:sz0f1-nvn20/sequence/default",
+    "versions": "https://127.0.0.1:5000/api/records/sz0f1-nvn20/versions"
+  },
+  "media_files": {
+    "count": 0,
+    "enabled": false,
+    "entries": {},
+    "order": [],
+    "total_bytes": 0
+  },
+  "metadata": {
+    "creators": [
+      {
+        "person_or_org": {
+          "family_name": "Datta",
+          "given_name": "Sohom",
+          "identifiers": [
+            {
+              "identifier": "0000-0001-7619-169X",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Datta, Sohom",
+          "type": "personal"
+        }
+      },
+      {
+        "person_or_org": {
+          "family_name": "Chalishazar",
+          "given_name": "Vishvas H.",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-4883-3509",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Chalishazar, Vishvas H.",
+          "type": "personal"
+        }
+      },
+      {
+        "person_or_org": {
+          "family_name": "Ahmad",
+          "given_name": "Tawsif",
+          "name": "Ahmad, Tawsif",
+          "type": "personal"
+        }
+      },
+      {
+        "person_or_org": {
+          "family_name": "Westman",
+          "given_name": "Jan K",
+          "name": "Westman, Jan K",
+          "type": "personal"
+        }
+      },
+      {
+        "person_or_org": {
+          "family_name": "Coleman",
+          "given_name": "Andre",
+          "name": "Coleman, Andre",
+          "type": "personal"
+        }
+      }
+    ],
+    "description": "<p>The datasets contain wildfire risk probabilities for transmission lines in the Western Interconnect, identified only by the HIFLD dataset identifier. The dataset is generated using PNNL's WREST Tool (https://www.pnnl.gov/projects/wildfire-risk-resilience/tools/wrest). The input dataset includes HIFLD datasets on transmission lines and wildfire burn potentials and flame lengths from the PNNL RADR-FIRE Tool for 2025.</p>",
+    "identifiers": [
+      {
+        "identifier": "10.11578/3018229",
+        "scheme": "doi"
+      }
+    ],
+    "publication_date": "2026-01-06",
+    "publisher": "rdm-app",
+    "resource_type": {
+      "id": "dataset",
+      "title": {
+        "cs": "Datov\u00e1 sada",
+        "de": "Datensatz",
+        "en": "Dataset",
+        "sv": "Dataset"
+      }
+    },
+    "rights": [
+      {
+        "description": {
+          "en": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited."
+        },
+        "icon": "cc-by-icon",
+        "id": "cc-by-4.0",
+        "props": {
+          "scheme": "spdx",
+          "url": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "title": {
+          "en": "Creative Commons Attribution 4.0 International"
+        }
+      }
+    ],
+    "title": "Western Interconnect Transmission Line Wildfire Risk"
+  },
+  "parent": {
+    "access": {
+      "grants": [],
+      "links": [],
+      "owned_by": {
+        "user": "2"
+      },
+      "settings": {
+        "accept_conditions_text": null,
+        "allow_guest_requests": false,
+        "allow_user_requests": false,
+        "secret_link_expiration": 0
+      }
+    },
+    "communities": {},
+    "id": "7btqp-01x84",
+    "is_verified": false,
+    "pids": {}
+  },
+  "pids": {},
+  "revision_id": 13,
+  "status": "draft",
+  "updated": "2026-04-28T21:44:05.960219+00:00",
+  "versions": {
+    "index": 1,
+    "is_latest": false,
+    "is_latest_draft": true
+  }
+}

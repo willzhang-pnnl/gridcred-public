@@ -25,23 +25,27 @@ def create_record_from_file(filename="record.json"):
 
         files_service = current_rdm_records_service.draft_files  
               
-        # Use the provided file or default to wildfire_risk_2025.xlsx  
-        upload_filename = "wildfire_risk_2025.xlsx"  
+        # Files to upload
+        upload_filenames = ["data.zip"]
           
+        # Initialize all files at once
         files_service.init_files(  
-            system_identity, draft.id, data=[{"key": Path(upload_filename).name}], uow=uow  
+            system_identity, draft.id, 
+            data=[{"key": Path(filename).name} for filename in upload_filenames], 
+            uow=uow  
         )  
           
-        # Open and upload the existing file  
-        with open(upload_filename, 'rb') as f:  
-            files_service.set_file_content(  
-                system_identity, draft.id, Path(upload_filename).name,   
-                f, uow=uow  
+        # Upload each file
+        for upload_filename in upload_filenames:
+            with open(upload_filename, 'rb') as f:  
+                files_service.set_file_content(  
+                    system_identity, draft.id, Path(upload_filename).name,   
+                    f, uow=uow  
+                )  
+              
+            files_service.commit_file(  
+                system_identity, draft.id, Path(upload_filename).name, uow=uow  
             )  
-          
-        files_service.commit_file(  
-            system_identity, draft.id, Path(upload_filename).name, uow=uow  
-        )  
         
         record = current_rdm_records_service.publish(  
             system_identity, draft.id, uow=uow  
